@@ -32,8 +32,10 @@
       login_password: ExpenseApp@1
       login_host: mysql.agrinature.store
     register: mysql_info
-    ignore_errors: false
+    ignore_errors: True
 
-  - name: print the output
-    ansible.builtin.debug:
-      msg: "MySQL info: {{ mysql_info }}"
+  - name: Create a new database with name 'bobdata'
+  community.mysql.mysql_db:
+    name: bobdata
+    state: present
+    
