@@ -35,7 +35,7 @@
     ignore_errors: True
 
   - name: Create a new database with name 'bobdata'
-  community.mysql.mysql_db:
-    name: bobdata
-    state: present
+    community.mysql.mysql_db:
+      name: bobdata
+      state: present
     
