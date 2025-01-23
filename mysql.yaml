@@ -32,7 +32,7 @@
       login_password: ExpenseApp@1
       login_host: mysql.agrinature.store
     register: mysql_info
-    ignore_errors: true
+    ignore_errors: false
 
   - name: print the output
     ansible.builtin.debug:
